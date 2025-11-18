@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Events</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Upcoming Library Events</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="catalog.html">Catalog</a> |
+      <a href="events.html">Events</a> |
+      <a href="account.html">Register</a> |
+      <a href="help.html">Help</a> |
+      <a href="admin.html">Admin</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Book Donation Drive</h2>
+
+      <video controls width="320">
+        <source src="assets/event.mp4" type="video/mp4">
+        <track src="assets/subtitles.vtt" kind="subtitles" srclang="en" label="English">
+        Your browser does not support the video tag.
+      </video>
+
+      <audio controls>
+        <source src="assets/audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+    </section>
+
+    <details>
+      <summary>Event Details</summary>
+      <p>Date: <time datetime="2025-11-20">November 20, 2025</time></p>
+      <p>Location: Community Library Hall</p>
+      <p>Description: Join us for a week-long celebration of books, reading, and fun activities!</p>
+    </details>
+
+    <h3>Watch a Preview:</h3>
+
+    <iframe 
+      width="400" height="250" 
+      src="https://www.youtube.com/embed/example"
+      title="Library Event Video" 
+      allowfullscreen>
+    </iframe>
+
+    <section>
+      <h2>Event Statistics</h2>
+
+      <p>Registration Progress:</p>
+      <progress value="60" max="100"></progress> 60%
+
+      <p>Library Visitor Satisfaction:</p>
+      <meter value="8.5" min="0" max="10" low="4" high="8" optimum="10">
+        8.5 out of 10
+      </meter>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Community Library.</p>
+  </footer>
+
+</body>
+</html>

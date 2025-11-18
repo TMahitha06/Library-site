@@ -1,0 +1,246 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #87cefa, #ffffff, #87cefa);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  color: #1e10df;
+  margin: 20px 0;
+  font-size: 2rem;
+}
+
+nav {
+  text-align: center;
+  background-color: #87cefa;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #d61485;
+}
+
+section {
+  padding: 40px 20px;
+  width: 90%;
+  max-width: 1100px;
+  margin: 30px auto;
+  background: linear-gradient(145deg, #ffffff, #d8efff);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+figure {
+  margin: 20px auto;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 15px;
+  margin: 15px auto;
+  display: block;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #87cefa;
+  color: #111;
+  margin-top: auto;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background: #154360;
+  color: white;
+}
+
+form {
+  width: 90%;
+  max-width: 600px;
+  margin: 30px auto;
+  background: #f9f3fc;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0000001a;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.gender-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+input, select, textarea, button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #f5d4ef;
+  border-radius: 5px;
+}
+
+.faq {
+  max-width: 800px;
+  margin: 20px auto;
+  background: #b5dbec;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #0000001a;
+}
+
+.faq details {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #e0f0fc;
+  transition: 0.3s;
+}
+
+.faq details:hover {
+  background: #d2e8f8;
+}
+
+.faq summary {
+  font-weight: bold;
+  list-style: none;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #c48ec4;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #a05fa0;
+}
+
+embed, canvas {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.admin-section {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 30px;
+  background: #fdfdfd;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.admin-section h2 {
+  color: #1e10df;
+  font-size: 1.8rem;
+}
+
+.pdf-container {
+  width: 100%;
+  height: 600px;
+  border: 2px solid #87cefa;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f4faff;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.pdf-container embed {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ================= Media ================= */
+@media (max-width: 1024px) {
+  section, form {
+    width: 95%;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+  embed {
+    height: 300px;
+  }
+  button {
+    width: 100%;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  .pdf-container {
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+  nav a {
+    font-size: 0.9rem;
+  }
+  section {
+    padding: 20px;
+  }
+  embed {
+    height: 250px;
+  }
+  .pdf-container {
+    height: 300px;
+  }
+  .admin-section h2 {
+    font-size: 1.4rem;
+  }
+}
